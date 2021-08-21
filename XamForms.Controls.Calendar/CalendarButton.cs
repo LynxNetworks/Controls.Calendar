@@ -5,6 +5,7 @@ namespace XamForms.Controls
 {
     public class CalendarButton : Button
     {
+
         public static readonly BindableProperty DateProperty = BindableProperty.Create(
             nameof(Date),
             typeof(DateTime?),

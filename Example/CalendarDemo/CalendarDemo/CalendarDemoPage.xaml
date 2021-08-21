@@ -8,26 +8,17 @@
         <Grid Margin="16,44,16,16">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-
-            <Label
-                Grid.Row="0"
-                Text="Hi there 👋"
-                HorizontalOptions="Center"
-                HorizontalTextAlignment="Center"
-                VerticalOptions="End"
-                Margin="20" />
             <controls:Calendar
-                Grid.Row="1"
+                Grid.Row="0"
                 Padding="10,0,10,0"
                 SelectedBorderWidth="4"
                 DisabledBorderColor="Black"
                 ShowNumberOfWeek="false"
                 StartDay="Monday"
-                TitleLabelTextColor="Purple"
-                TitleLeftArrowTextColor="Blue"
+                TitleLabelTextColor="Black"
+                TitleLeftArrowTextColor="SkyBlue"
+                TitleRightArrowTextColor="SkyBlue"
                 SelectedDate="{Binding Date}"
                 SpecialDates="{Binding Attendances}"
                 DateCommand="{Binding DateChosen}">

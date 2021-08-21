@@ -245,6 +245,7 @@ namespace XamForms.Controls
                 button.TextColor = SelectedTextColor != Color.Default ? SelectedTextColor : (special != null && special.TextColor.HasValue ? special.TextColor.Value : defaultTextColor);
                 button.FontAttributes = SelectedFontAttributes != FontAttributes.None ? SelectedFontAttributes : (special != null && special.FontAttributes.HasValue ? special.FontAttributes.Value : defaultFontAttributes);
                 button.FontFamily = !string.IsNullOrEmpty(SelectedFontFamily) ? SelectedFontFamily : (special != null && !string.IsNullOrEmpty(special.FontFamily) ? special.FontFamily : defaultFontFamily);
+                button.CornerRadius = (int)Math.Ceiling(button.Width / 2.0);
             });
         }
 

@@ -48,14 +48,14 @@ namespace CalendarDemo
             Attendances = new ObservableCollection<SpecialDate>(dates) {
                 new SpecialDate(DateTime.Now.AddDays(2))
                 {
-                     BackgroundColor = Color.Green,
+                     //BackgroundColor = Color.Green,
                      TextColor = Color.Accent,
                      BorderColor = Color.Lime,
                      BorderWidth = 8,
                      Selectable = true },
                 new SpecialDate(DateTime.Now.AddDays(3))
                 {
-                    BackgroundColor = Color.Green,
+                    //BackgroundColor = Color.Green,
                     TextColor = Color.Blue,
                     Selectable = true,
                     BackgroundPattern = new BackgroundPattern(1)

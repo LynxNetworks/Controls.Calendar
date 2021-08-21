@@ -220,6 +220,7 @@ namespace XamForms.Controls
 				button.FontFamily = DisabledFontFamily;
 				button.IsEnabled = false;
 				button.IsSelected = false;
+				button.CornerRadius = (int)Math.Ceiling(button.Width / 2.0);
 			});
 		}
 	}

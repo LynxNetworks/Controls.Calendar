@@ -627,6 +627,7 @@ namespace XamForms.Controls
                 button.TextColor = button.IsOutOfMonth ? DatesTextColorOutsideMonth : DatesTextColor;
                 button.FontAttributes = button.IsOutOfMonth ? DatesFontAttributesOutsideMonth : DatesFontAttributes;
                 button.IsEnabled = ShowNumOfMonths == 1 || !button.IsOutOfMonth;
+                button.CornerRadius = (int)Math.Ceiling(button.Width / 2.0);
             });
         }
 
